@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/nav_menu_movies" />
+        <item
+            android:id="@+id/nav_tv_series"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/nav_menu_tv_series" />
+        <item
+            android:id="@+id/nav_actors"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_menu_actors" />
+    </group>
+
+</menu>

@@ -1,0 +1,8 @@
+package com.sgp95.santiago.moviedb.http.apimodels.tvserie;
+
+/**
+ * Created by Hiraoka on 28/07/2017.
+ */
+
+public class tvserie {
+}
