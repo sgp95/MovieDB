@@ -41,7 +41,7 @@ public class MoviesFragment extends Fragment implements MoviesFragmentMVP.View {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //((App) getActivity().getApplicationContext()).getComponent().injectMovies(this);
+        ((App) getActivity().getApplicationContext()).getComponent().injectMovies(this);
     }
 
     @Nullable
@@ -57,7 +57,7 @@ public class MoviesFragment extends Fragment implements MoviesFragmentMVP.View {
         super.onViewCreated(view, savedInstanceState);
 
         //ButterKnife.bind(getActivity());
-        ((App) getActivity().getApplicationContext()).getComponent().injectMovies(this);
+        //((App) getActivity().getApplicationContext()).getComponent().injectMovies(this);
         adapter = new MovieListAdapter(listViewMovieModels,getActivity());
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);

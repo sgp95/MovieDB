@@ -42,7 +42,7 @@ public class MoviesRepository implements MRepository {
         return popularMoviesObservable.concatMap(new Func1<Movies, Observable<MovieResult>>() {
             @Override
             public Observable<MovieResult> call(Movies movies) {
-                return Observable.from(movies.movieResults);
+                return Observable.from(movies.getMovieResults());
             }
         }).doOnNext(new Action1<MovieResult>() {
             @Override

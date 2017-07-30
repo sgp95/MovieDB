@@ -13,7 +13,6 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.sgp95.santiago.moviedb.moviesfragment.MoviesFragment;
-import com.sgp95.santiago.moviedb.root.App;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -37,8 +36,6 @@ public class DrawerMenuActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer_menu);
-
-        ((App) getApplication()).getComponent().injectMain(this);
 
         ButterKnife.bind(this);
 
