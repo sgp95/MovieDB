@@ -10,10 +10,7 @@ import javax.inject.Singleton;
 import dagger.Component;
 
 @Singleton
-@Component(modules =
-        {ApplicationModule.class
-                ,ApiModuleForMovies.class
-                , MoviesModule.class})
+@Component(modules = {ApplicationModule.class,ApiModuleForMovies.class, MoviesModule.class})
 public interface ApplicationComponent {
 
     void injectMovies(MoviesFragment target);

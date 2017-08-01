@@ -35,6 +35,7 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.List
         holder.movieOverview.setText(list.get(position).getOverview());
         Picasso.with(context)
                 .load(list.get(position).getPosterPath())
+                .fit()
                 .into(holder.moviePoster);
 
 

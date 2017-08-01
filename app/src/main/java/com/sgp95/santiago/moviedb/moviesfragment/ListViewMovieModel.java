@@ -45,6 +45,6 @@ public class ListViewMovieModel {
     }
 
     public void setPosterPath(String posterPath) {
-        this.posterPath = BASE_URL_IMAGE+ posterPath;
+        this.posterPath = BASE_URL_IMAGE+posterPath;
     }
 }

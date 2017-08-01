@@ -17,7 +17,7 @@ public class Movies {
     @SerializedName("total_pages")
     @Expose
     private Integer totalPages;
-    @SerializedName("movieResults")
+    @SerializedName("results")
     @Expose
     private List<MovieResult> movieResults = null;
 

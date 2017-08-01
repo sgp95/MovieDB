@@ -37,6 +37,11 @@ public class DrawerMenuActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drawer_menu);
 
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.content_for_fragmetn,new MoviesFragment());
+        ft.addToBackStack(null);
+        ft.commit();
+
         ButterKnife.bind(this);
 
         setSupportActionBar(toolbar);
@@ -47,6 +52,7 @@ public class DrawerMenuActivity extends AppCompatActivity
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -79,7 +85,7 @@ public class DrawerMenuActivity extends AppCompatActivity
 
     public void showFragment(Fragment fragment){
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.list_fragment_root,fragment);
+        ft.replace(R.id.content_for_fragmetn,fragment);
         ft.addToBackStack(null);
         ft.commit();
     }
